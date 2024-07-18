@@ -8,8 +8,11 @@ public class StaticBlock {
     }
     static{
         System.out.println("sb1");
+        String s[] = {"a","b","c"};
+        main(s);
     }
     static{
         System.out.println("sb2");
+        System.out.println("--------------------");
     }
 }
