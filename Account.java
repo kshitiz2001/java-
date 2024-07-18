@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Account {
-     long accNo;
+/*     long accNo;
      String accName;
 
     public static void main(String[] args) {
@@ -24,5 +24,23 @@ public class Account {
             System.out.println("Account Name: "+(i+1)+obj.accName);
         }
 
+    }
+*/
+
+    //Hard Code
+    long accNo;
+    String accName;
+    Account(long accNo, String accName){
+        this.accNo = accNo;
+        this.accName = accName;
+    }
+
+    public static void main(String[] args) {
+        Account obj1 = new Account(1234567890,"Rahul");
+        Account obj2 = new Account(1234567891,"Rohit");
+        System.out.println("Account Number: "+obj1.accNo);
+        System.out.println("Account Holder Name: "+obj1.accName);
+        System.out.println("Account Number: "+obj2.accNo);
+        System.out.println("Account Holder Name: "+obj2.accName);
     }
 }
